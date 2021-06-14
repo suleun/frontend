@@ -20,7 +20,7 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
-    <title>연습하기</title>
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
@@ -61,8 +61,31 @@
             margin: auto;
         }
 
+        #rate {
+            color: blue;
+        }
 
     </style>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/rate",
+                data: {},
+                success: function (response) {
+                    let rate = (response['rate'])
+                    console.log(rate)
+                    let temp_html = `<p>
+                                    달러-원 환율 : ${rate}
+                                </p>`;
+                    $('#rate').append(temp_html)
+                }
+            })
+        });
+
+
+    </script>
 
 </head>
 
@@ -73,7 +96,9 @@
     </div>
     <div class="productName">
         <h1> 대나무 헬리콥터 <span class="price"> 가격 : 1,000 원 / 개 </span></h1>
+        <div class id="rate">
 
+        </div>
         <p>
             소형의 단일 프로펠러다. 이걸 몸의 어딘가에 붙일 수 있고 그 후 프로펠러 부분이 회전해서 공중을 날수 있다. 보통 머리에 붙인다. 배터리 내장식이며 최대 연속 비행 시간은 6시간~8시간. 시속
             6~80km로 8시간 주행할 수 있다고 한다.
