@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>연습하기</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .wrap {
+
+            width: 900px;
+            margin: auto;
+        }
+
+        .img {
+            width: 500px;
+            margin: auto;
+
+        }
+
+        .productName {
+            width: 800px;
+            margin: auto;
+            padding-top: 30px;
+        }
+
+        .price {
+            font-size: 20px;
+        }
+
+        .forms {
+            width: 800px;
+            margin: auto;
+        }
+
+        .btn-light {
+            display: block;
+            margin: auto;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="wrap">
+    <div class="img">
+        <img src="https://pics2.gundamboom.kr/web/product/big/527649001608022232_2513849.jpg">
+    </div>
+    <div class="productName">
+        <h1> 대나무 헬리콥터 <span class="price"> 가격 : 1,000 원 / 개 </span></h1>
+
+        <p>
+            소형의 단일 프로펠러다. 이걸 몸의 어딘가에 붙일 수 있고 그 후 프로펠러 부분이 회전해서 공중을 날수 있다. 보통 머리에 붙인다. 배터리 내장식이며 최대 연속 비행 시간은 6시간~8시간. 시속
+            6~80km로 8시간 주행할 수 있다고 한다.
+        </p>
+    </div>
+
+    <form class="forms">
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"> 주문자 성함 : </label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"> 수량 : </label>
+            <div class="col-sm-10">
+                <select class="form-control">
+                    <option selected>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"> 주소 : </label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"> 전화번호 : </label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control">
+            </div>
+        </div>
+    </form>
+
+    <button type="button" class="btn btn-light">주문하기</button>
+
+</div>
+</body>
+
+</html>
